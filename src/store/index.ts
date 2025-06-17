@@ -38,7 +38,7 @@ export default createStore<RootState>({
             }
         },
 
-        tasksStats: (state: RootState, getters: any) => ({ // Добавили state
+        tasksStats: (_state: RootState, getters: any) => ({ // Добавили state
             activeTasksCount: getters.activeTasks.length,
             doneTasksCount: getters.doneTasks.length,
         }),
